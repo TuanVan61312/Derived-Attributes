@@ -1,0 +1,20 @@
+Derived attributes (thuộc tính phụ thuộc) là những thuộc tính trong 
+cơ sở dữ liệu hoặc lớp đối tượng mà giá trị của chúng được tính toán 
+dựa trên các thuộc tính khác. Điều này có nghĩa rằng giá trị của 
+derived attribute không được lưu trữ trực tiếp, mà nó được tính 
+toán mỗi khi được yêu cầu.
+
+Derived attributes thường xuất hiện trong các tình huống khi ta muốn 
+lưu trữ một giá trị có thể dễ dàng tính toán từ các thuộc tính khác, 
+và việc lưu trữ thực sự không cần thiết hoặc tốn kém. Một ví dụ phổ 
+biến về derived attribute là "tuổi" trong cơ sở dữ liệu người. 
+Thay vì lưu trữ giá trị tuổi, chúng ta có thể lưu trữ ngày sinh 
+và sau đó tính toán tuổi bằng cách trừ năm sinh từ năm hiện tại.
+
+Derived attributes có thể được tính toán ngay khi cần thiết hoặc 
+có thể được tính toán và lưu trữ trong một thuộc tính ẩn hoặc 
+cache để tránh tính toán lặp lại khi cần.
+
+Việc sử dụng derived attributes giúp cải thiện hiệu suất và 
+tiết kiệm không gian lưu trữ, nhưng cũng có thể gây ra sự phức 
+tạp trong việc cập nhật dữ liệu nếu các thuộc tính gốc thay đổi.
